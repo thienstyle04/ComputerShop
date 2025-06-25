@@ -1,5 +1,6 @@
 ﻿using ComputerShop.Data;
 using ComputerShop.Models.Interfaces;
+using Microsoft.EntityFrameworkCore;
 namespace ComputerShop.Models.Services
 {
     public class ProductRepository : IProductRepository
@@ -22,7 +23,10 @@ namespace ComputerShop.Models.Services
 
         public IEnumerable<Product> GetTrendingProducts()
         {
-            return dbContext.Products.Where(p => p.IsTrendingProduct);
+            return dbContext.Products.OrderBy(p => Guid.NewGuid())  // ngẫu nhiên (hiệu quả hơn Random với EF)
+                           .Take(3)
+                           .ToList();
         }
+       
     }
 }

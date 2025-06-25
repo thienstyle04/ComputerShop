@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ComputerShop.Models.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using ComputerShop.Models;
 
 namespace ComputerShop.Controllers
 {

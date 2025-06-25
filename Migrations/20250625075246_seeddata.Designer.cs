@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ComputerShop.Migrations
 {
     [DbContext(typeof(ComputershopDbContext))]
-    [Migration("20250624090649_seeddata")]
+    [Migration("20250625075246_seeddata")]
     partial class seeddata
     {
         /// <inheritdoc />
@@ -82,15 +82,6 @@ namespace ComputerShop.Migrations
                         new
                         {
                             Id = 4,
-                            Detail = "Đây là mẫu chuột phổ thông phù hợp với tất cả mọi người, mang đến nhưng trải nghiệm tuyệt vời trong tứng cú click chuột",
-                            ImageUrl = "https://vn-test-11.slatic.net/p/25207546e24e317300760acff295d10d.png",
-                            IsTrendingProduct = false,
-                            Name = "Chuột không dây Logitech M650",
-                            Price = 599000m
-                        },
-                        new
-                        {
-                            Id = 5,
                             Detail = "Dễ dàng sắp xếp trong không gian làm việc, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng",
                             ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg",
                             IsTrendingProduct = false,
@@ -99,7 +90,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 6,
+                            Id = 5,
                             Detail = "Đúng như tên gọi của nó thì đây là dòng máy chuyên dùng để chơi các thể loại game với cấu hình và hiệu năng cáo giúp trải nhiệm về game hiệu quả",
                             ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg",
                             IsTrendingProduct = false,
@@ -108,7 +99,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 7,
+                            Id = 6,
                             Detail = "Đây là sự kết hợp giữa Pc văn phòng và PC chơi game không chỉ nhỏ gọn, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng mà còn đem lại hiệu năng cáo giúp trải nhiệm về game hiệu quả ",
                             ImageUrl = "/images/",
                             IsTrendingProduct = false,
@@ -117,7 +108,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 8,
+                            Id = 7,
                             Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
                             ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
                             IsTrendingProduct = false,
@@ -126,7 +117,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 9,
+                            Id = 8,
                             Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
                             ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
                             IsTrendingProduct = false,
@@ -135,7 +126,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 10,
+                            Id = 9,
                             Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
                             ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
                             IsTrendingProduct = false,
@@ -144,7 +135,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 11,
+                            Id = 10,
                             Detail = "Đây là thanh RAM thế hệ thứ 4 của nhà Kingston có hiệu năng cao",
                             ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0",
                             IsTrendingProduct = false,
@@ -153,7 +144,7 @@ namespace ComputerShop.Migrations
                         },
                         new
                         {
-                            Id = 12,
+                            Id = 11,
                             Detail = "Đây là thanh RAM thế hệ thứ 5 của nhà Kingston có hiệu năng cao",
                             ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0",
                             IsTrendingProduct = false,

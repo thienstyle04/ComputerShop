@@ -17,6 +17,7 @@
         </div>
     </div>
 </section>
+<br>
 <section class="content2" id="new-products">
     <div class="container">
         <div class="mbr-section-head">
@@ -25,52 +26,28 @@
             <h2>Các mặt hàng tiêu biểu trong tuần.</h2>
         </div>
         <div class="row mt-4">
-            <div class="item col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
+            <div class="row mt-4">
+                @foreach (var product in Model)
+                {
+                    <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="item-wrapper">
+                            <div class="item-img">
+                                <img src="@product.ImageUrl" alt="@product.Name" width="336" height="224">
+                            </div>
+                            <div class="item-content">
+                                <a href="@Url.Action("Detail", "Products", new { id = product.Id })" class="item-subtitle mt-1 display-7"><strong>@product.Name</strong></a>
+                                <p class="mbr-text mt-3 display-7">Giá: @product.Price.ToString("N0")đ</p>
+                            </div>
+                            <div class="mbr-section-btn item-footer mt-2">
+                                <a href="@Url.Action("AddToCart", "Cart", new { id = product.Id })" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item-content">
-                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Laptop Asus Zenbook 14</strong></a>
-                        <p class="mbr-text mt-3 display-7">Giá: 21.990.000đ</p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="item col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
-                    </div>
-                    <div class="item-content">
-                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Macbook 16 Pro</strong></a>
-                        <p class="mbr-text mt-3 display-7">Giá: 32.990.000đ</p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="item col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
-                    </div>
-                    <div class="item-content">
-                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Asus Gaming F15</strong></a>
-                        <p class="mbr-text mt-3 display-7">Giá: 20.990.000đ</p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
-                    </div>
-                </div>
+                }
             </div>
         </div>
-    </div>
+     </div>
+  </div>
 </section>
 <footer class="bg-light mt-5">
     <div class="bg-primary text-white py-4">

@@ -57,7 +57,6 @@ namespace ComputerShop.Migrations
                             IsTrendingProduct = false,
                             Name = "Laptop Asus Zenbook 14",
                             Price = 21990000m
-
                         },
                         new
                         {

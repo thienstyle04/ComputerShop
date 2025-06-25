@@ -13,18 +13,106 @@ namespace ComputerShop.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Product>().HasData(
-                new Product { Id = 1, Name = "Laptop Asus Zenbook 14", Price = 21990000, Detail = "Đây là dòng máy rất phù hợp với ae văn phòng, với thiết kế mọng và nhẹ rất phù hợp đẻ cầm.", ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194" },
-                new Product { Id = 2, Name = "Asus Gaming F15", Price = 20990000, Detail = "Đây là dòng máy gaming đến từ nhà Asus với thiết kế hầm hồ và hiệu năng cao từ đó mang lại trải nghiệm tốt nhất khi học tập và làm việc", ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194" },
-                new Product { Id = 3, Name = "Macbook 16 Pro", Price = 32990000, Detail = "Được tạo ra dựa trên chip M4, M4 Pro cho bạn hiệu năng mạnh mẽ hơn nữa và bộ nhớ thống nhất tăng cường để làm việc với những ứng dụng và luồng công việc đỏi hỏi cao, và Neural Engine giúp bạn xử lý nhanh chóng các quy trình làm việc chuyên nghiệp trên AI", ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194" },
-                new Product { Id = 4, Name = "Chuột không dây Logitech M650", Price = 599000, Detail = "Đây là mẫu chuột phổ thông phù hợp với tất cả mọi người, mang đến nhưng trải nghiệm tuyệt vời trong tứng cú click chuột", ImageUrl = "https://vn-test-11.slatic.net/p/25207546e24e317300760acff295d10d.png" },
-                new Product { Id = 5, Name = "Pc văn phòng", Price = 15000000, Detail = "Dễ dàng sắp xếp trong không gian làm việc, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng", ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg" },
-                new Product { Id = 6, Name = "Pc chuyên game", Price = 22200000, Detail = "Đúng như tên gọi của nó thì đây là dòng máy chuyên dùng để chơi các thể loại game với cấu hình và hiệu năng cáo giúp trải nhiệm về game hiệu quả", ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg" },
-                new Product { Id = 7, Name = "Pc hiệu năng cao", Price = 30000000, Detail = "Đây là sự kết hợp giữa Pc văn phòng và PC chơi game không chỉ nhỏ gọn, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng mà còn đem lại hiệu năng cáo giúp trải nhiệm về game hiệu quả ", ImageUrl = "/images/" },
-                new Product { Id = 8, Name = "Phím cơ Logitech Pro", Price = 2500000, Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ", ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg" },
-                new Product { Id = 9, Name = "Phím cơ Logitech", Price = 1800000, Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ", ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg" },
-                new Product { Id = 10, Name = "Phím bản giới hạn", Price = 3500000, Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ", ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg" },
-                new Product { Id = 11, Name = "Ram Kingston DDR4", Price = 1500000, Detail = "Đây là thanh RAM thế hệ thứ 4 của nhà Kingston có hiệu năng cao", ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0" },
-                new Product { Id = 12, Name = "Ram Kingston DDR5", Price = 3000000, Detail = "Đây là thanh RAM thế hệ thứ 5 của nhà Kingston có hiệu năng cao", ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0" }
+                new
+                {
+                    Id = 1,
+                    Detail = "Đây là dòng máy rất phù hợp với ae văn phòng, với thiết kế mọng và nhẹ rất phù hợp đẻ cầm.",
+                    ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194",
+                    IsTrendingProduct = false,
+                    Name = "Laptop Asus Zenbook 14",
+                    Price = 21990000m
+                },
+                new
+                {
+                    Id = 2,
+                    Detail = "Đây là dòng máy gaming đến từ nhà Asus với thiết kế hầm hồ và hiệu năng cao từ đó mang lại trải nghiệm tốt nhất khi học tập và làm việc",
+                    ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194",
+                    IsTrendingProduct = false,
+                    Name = "Asus Gaming F15",
+                    Price = 20990000m
+                },
+                new
+                {
+                    Id = 3,
+                    Detail = "Được tạo ra dựa trên chip M4, M4 Pro cho bạn hiệu năng mạnh mẽ hơn nữa và bộ nhớ thống nhất tăng cường để làm việc với những ứng dụng và luồng công việc đỏi hỏi cao, và Neural Engine giúp bạn xử lý nhanh chóng các quy trình làm việc chuyên nghiệp trên AI",
+                    ImageUrl = "https://s.yimg.com/os/creatr-uploaded-images/2023-01/fb0dce50-8a31-11ed-b3ff-b8d61a9c0194",
+                    IsTrendingProduct = false,
+                    Name = "Macbook 16 Pro",
+                    Price = 32990000m
+                },
+                new
+                {
+                    Id = 4,
+                    Detail = "Dễ dàng sắp xếp trong không gian làm việc, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng",
+                    ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg",
+                    IsTrendingProduct = false,
+                    Name = "Pc văn phòng",
+                    Price = 15000000m
+                },
+                new
+                {
+                    Id = 5,
+                    Detail = "Đúng như tên gọi của nó thì đây là dòng máy chuyên dùng để chơi các thể loại game với cấu hình và hiệu năng cáo giúp trải nhiệm về game hiệu quả",
+                    ImageUrl = "https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-xin-nhat-585x390.jpg",
+                    IsTrendingProduct = false,
+                    Name = "Pc chuyên game",
+                    Price = 22200000m
+                },
+                new
+                {
+                    Id = 6,
+                    Detail = "Đây là sự kết hợp giữa Pc văn phòng và PC chơi game không chỉ nhỏ gọn, tiết kiệm diện tích và đáp ứng tốt nhu cầu sử dụng văn phòng như soạn thảo văn bản, lướt web, và sử dụng phần mềm chuyên dụng mà còn đem lại hiệu năng cáo giúp trải nhiệm về game hiệu quả ",
+                    ImageUrl = "/images/",
+                    IsTrendingProduct = false,
+                    Name = "Pc hiệu năng cao",
+                    Price = 30000000m
+                },
+                new
+                {
+                    Id = 7,
+                    Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
+                    ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
+                    IsTrendingProduct = false,
+                    Name = "Phím cơ Logitech Pro",
+                    Price = 2500000m
+                },
+                new
+                {
+                    Id = 8,
+                    Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
+                    ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
+                    IsTrendingProduct = false,
+                    Name = "Phím cơ Logitech",
+                    Price = 1800000m
+                },
+                new
+                {
+                    Id = 9,
+                    Detail = "Đây là dòng phím Gaming mới nhất đến từ nhà logitech với thiết kế gọn gàng, tích kiểm diẹn tích ",
+                    ImageUrl = "https://hanoicomputercdn.com/media/lib/49500_ban-phim-co-Logitech-G-Pro-X-RGB-Lightsync-Mechanical-GX-Blue-Switch-3.jpg",
+                    IsTrendingProduct = false,
+                    Name = "Phím bản giới hạn",
+                    Price = 3500000m
+                },
+                new
+                {
+                    Id = 10,
+                    Detail = "Đây là thanh RAM thế hệ thứ 4 của nhà Kingston có hiệu năng cao",
+                    ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0",
+                    IsTrendingProduct = false,
+                    Name = "Ram Kingston DDR4",
+                    Price = 1500000m
+                },
+                new
+                {
+                    Id = 11,
+                    Detail = "Đây là thanh RAM thế hệ thứ 5 của nhà Kingston có hiệu năng cao",
+                    ImageUrl = "https://th.bing.com/th/id/R.e2e9fe4a4d48d42c3831293df3303b6b?rik=HHHl706DT2o%2f4Q&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f05%2fHyperX-Predator-DDR4.jpg&ehk=p0pVo6Lm2g2MO%2fh8AzisdtHf3szuzXiUoOiKZBboXe8%3d&risl=&pid=ImgRaw&r=0",
+                    IsTrendingProduct = false,
+                    Name = "Ram Kingston DDR5",
+                    Price = 3000000m
+                }
+
             );
         }
 
