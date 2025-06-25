@@ -1,4 +1,78 @@
-﻿<footer class="bg-light mt-5">
+﻿ @model IEnumerable<Product>
+<section class="header18 mbr-fullscreen mbr-parallax-background" id="header18-1">
+    <div class="mbr-overlay" style="opacity:0.8; background-image: url('~/assets/images/pc-background.jpg'); background-size: cover;"></div>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1">
+                    <strong>Chào mừng bạn đến với Cửa hàng Máy tính</strong>
+                </h1>
+                <p class="mbr-text mbr-fonts-style mbr-white display-7">
+                    Nơi bạn tìm thấy mọi linh kiện và thiết bị hoàn hảo.
+                </p>
+                <div class="mbr-section-btn mt-3">
+                    <a class="btn btn-primary display-4" asp-controller="Products" asp-action="Shop">Đến cửa hàng ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content2" id="new-products">
+    <div class="container">
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title align-center mb-0 display-2"><strong>Mặt hàng bán chạy nhất!</strong></h4>
+            <br>
+            <h2>Các mặt hàng tiêu biểu trong tuần.</h2>
+        </div>
+        <div class="row mt-4">
+            <div class="item col-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
+                    </div>
+                    <div class="item-content">
+                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Laptop Asus Zenbook 14</strong></a>
+                        <p class="mbr-text mt-3 display-7">Giá: 21.990.000đ</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer mt-2">
+                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="item col-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
+                    </div>
+                    <div class="item-content">
+                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Macbook 16 Pro</strong></a>
+                        <p class="mbr-text mt-3 display-7">Giá: 32.990.000đ</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer mt-2">
+                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="item col-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="~/assets/images/Laptop Gaming F15.webp" alt="New Product">
+                    </div>
+                    <div class="item-content">
+                        <a href="detail.html" class="item-subtitle mt-1 display-7"><strong>Asus Gaming F15</strong></a>
+                        <p class="mbr-text mt-3 display-7">Giá: 20.990.000đ</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer mt-2">
+                        <a href="cart.html" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-light mt-5">
     <div class="bg-primary text-white py-4">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
