@@ -1,9 +1,11 @@
 ﻿using ComputerShop.Models.Interfaces;
 using ComputerShop.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ComputerShop.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private IOrderRepository orderRepository;
