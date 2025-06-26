@@ -35,7 +35,9 @@
                             <p class="mbr-text mt-3 display-7">Giá: @product.Price.ToString("N0")đ</p>
                         </div>
                         <div class="mbr-section-btn item-footer mt-2">
-                            <a href="@Url.Action("AddToCart", "Cart", new { id = product.Id })" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
+                            <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-pId="@product.Id" class="btn btn-primary">
+                                <span class="mbrib-cart-add mbr-iconfont mbr-iconfont-btn"></span> them vao gio hang
+                            </a>
                         </div>
                     </div>
                 </div>

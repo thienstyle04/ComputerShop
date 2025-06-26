@@ -24,8 +24,8 @@
                         <span class="currentcost mbr-fonts-style pr-2 display-2">@Model.Price.ToString("N0")đ</span>
                     </div>
                     <div class="mbr-section-btn item-footer mt-2">
-                        <a href="@Url.Action("AddToCart", "Cart", new { id = Model.Id })" class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
-
+                        <a href="@Url.Action("AddToShoppingCart", "ShoppingCart", new { pId = Model.Id })"
+                           class="btn item-btn btn-primary display-4">Thêm vào giỏ</a>
                         <a href="@Url.Action("Shop", "Products")" class="btn btn-secondary display-4">Quay lại</a>
                     </div>
                 </div>
